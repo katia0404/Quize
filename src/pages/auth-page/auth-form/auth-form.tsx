@@ -5,23 +5,19 @@ import { useForm, SubmitHandler, Controller, useFormState } from "react-hook-for
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-
+import React from 'react';
 import AuthForm from './auth-form'; // Обновленное импорт-указание
 import './auth-page.css';
 interface ISignInForm {
     login: string;
     password: string;
 }
-export const AuthPage: React.FC = () => {
-    return (
-        <div className="auth-page">
-            <AuthForm />
-        </div>)
-/*const AuthForm: React.FC = () => {
+
+const AuthForm: React.FC = () => {
     const { handleSubmit, control } = useForm<ISignInForm>();
     const { errors } = useFormState({ 
         control
-    });*/
+    });
 
     const history = useHistory();
 
