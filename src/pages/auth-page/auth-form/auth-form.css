@@ -1,0 +1,33 @@
+.auth-form {                      /*фон*/
+    width: 50vw;
+    height: 100vh;
+    background: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.auth-form__subtitle {   /*Чтобы получить доступ*/
+
+    color: rgb(218, 208, 215);
+}
+
+.auth-form__form {
+    max-width: 360px;
+ 
+
+}
+
+.auth-form__keep-logged-in {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.auth-form__footer {
+    margin-top: 8px;
+}
